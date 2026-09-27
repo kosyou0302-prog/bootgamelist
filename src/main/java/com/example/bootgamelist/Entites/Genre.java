@@ -1,4 +1,4 @@
-package com.example.bootgamelist.Entitys;
+package com.example.bootgamelist.Entites;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

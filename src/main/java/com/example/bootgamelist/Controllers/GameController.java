@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.bootgamelist.Entitys.Game;
+import com.example.bootgamelist.Entites.Game;
 import com.example.bootgamelist.Repository.GameListRepository;
 
 import jakarta.transaction.Transactional;

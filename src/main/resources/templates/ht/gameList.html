@@ -23,11 +23,13 @@
 
       <tbody>
         <tr th:each="item : ${data}">
-          <td th:text="*{item.id}"></td>
-          <td th:text="*{item.title}"></td>
-          <td th:text="*{item.genre}"></td>
-          <td th:text="*{item.releaseDate}"></td>
-          <td th:text="*{item.maker}"></td>
+          <td th:text="${item.id}"></td>
+          <td th:text="${item.title}"></td>
+          <td>
+            <a th:href="@{/genre(genre_id=${item.genre.id})}" th:text="${item.genre.genre}"></a>
+          </td>
+          <td th:text="${item.releaseDate}"></td>
+          <td th:text="${item.maker}"></td>
 
           <td>
             <form th:action="@{/gameUpdate/{id}(id=${item.id})}" method="get" class="d-inline">

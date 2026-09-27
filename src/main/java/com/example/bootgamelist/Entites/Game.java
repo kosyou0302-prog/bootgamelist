@@ -1,4 +1,4 @@
-package com.example.bootgamelist.Entitys;
+package com.example.bootgamelist.Entites;
 
 import java.time.LocalDate;
 
